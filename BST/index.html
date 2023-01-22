@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary_Tree_Visualizer</title>
+    <link rel="stylesheet" href="indt.css">
+    <title>Binary Tree Visualizer</title>
+</head>
+<body>
+    <header>
+        <div id="title">Tree Visualizer</div>
+        <h2>Tree data Struture Visualizer</h2>
+        <label>Array:</label><br/>
+        <input type="text" id="array-input" name ="array" />
+
+        <div class="options">
+            <button onclick="treeAndArray()">Binary Tree Visualization</button>
+            <button onclick="heapify()">Max heap Visualization</button>
+            <button onclick="createBinarySearchTree()">Binary Search tree Visualization</button>
+        </div>
+    </header>
+
+    <!-- ADDING DIV TAGS to add the visuals via JavaScript -->
+
+    <div id="blurb">
+        <div id="visual-title"></div>
+        <div id="instructions"></div>
+    </div>
+
+    <div id = "binary-tree"></div>
+    <div id ="array-visual"></div>
+
+    <script src = "https://d3js.org/d3.v5.min.js"></script>
+
+    <script src="node.js"></script>
+    <script src="heap.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
